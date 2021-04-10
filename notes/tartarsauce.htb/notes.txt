@@ -1,0 +1,20 @@
+80
+
+foothold:
+/webservices/monstra-3.0.4 in robots.txt
+turned out to be rabbit hole since nothing works
+discovered /webservices/wp with dirsearch
+wpscan -e p,u --plugins-detection aggressive --url "url"
+gwolle-guestbook vulnerable to rfi:38861 from exploitdb
+foothold as www-data
+
+horizontal privesc:
+sudo -l shows: (onuma) NOPASSWD:/usr/bin/tar
+sudo -u onuma tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+shell as onuma
+
+root.txt:
+systemctl list-timers shows root runs backuperer service every 5 min
+symlink /root/root.txt to /var/www/html/root.txt
+while the script backs up delete /var/www/html/root.txt and create a same empty file
+script then detects inconsistency between backup and actual dir so it prints out contents of root.txt

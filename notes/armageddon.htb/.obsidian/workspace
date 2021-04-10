@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "754709824a14f11a",
+    "type": "split",
+    "children": [
+      {
+        "id": "3085814dc3f67653",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ba51bf3a88f00595",
+    "type": "split",
+    "children": [
+      {
+        "id": "64003463a335b749",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f350fe259449d9a3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5445a6a9389f55fb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1541828e4e5510c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e1e94f4b6ca7b70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "749e72b2e07b7b2f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "notes.md",
+    "Untitled.md"
+  ]
+}

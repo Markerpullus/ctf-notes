@@ -1,0 +1,3 @@
+gobuster --> /robots.txt
+ssh as itsskv
+kernel exploit

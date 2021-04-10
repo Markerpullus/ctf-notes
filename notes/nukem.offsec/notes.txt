@@ -1,0 +1,19 @@
+22: ssh
+80: http
+3306: mysql
+5000: werkzeug/1.0.1 python 3.8.5
+
+wordpress 5.5.1
+plugin simple-file-list 4.2.2 vulnerable to file upload
+gained php reverse shell as http user running arch-linux
+
+commander:CommanderKeenVorticons1990 credential found in /srv/http/wp-config.php
+su commander
+
+dosbox gui app suid
+vnc running on localhost:5901
+ssh -L 5901:localhost:5901 commander@ip
+vncviewer localhost:5901
+launch dosbox and mount /etc to C:\
+add commander to sudoers file
+sudo -i

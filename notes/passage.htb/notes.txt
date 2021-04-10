@@ -1,0 +1,4 @@
+CuteNews 2.1.2 RCE
+Creds for paul found in cutenews dir
+nadav has paul in authorized_keys -> ssh nadav
+usb-creator exploit

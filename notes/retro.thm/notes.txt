@@ -1,0 +1,16 @@
+enum:
+rdp on 3389
+wordpress site on /retro
+
+foothold:
+password for wade found on page: parzival
+rdp into machine
+
+privesc:
+#1:
+upgrade to meterpreter shell
+use post/windows/gather/enum_chrome
+found weird cve-2019-1388 in search history
+exploit the vuln and escalate privilege
+#2:
+kernel exploit cve2017-0213

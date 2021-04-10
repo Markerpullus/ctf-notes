@@ -1,0 +1,17 @@
+22, 80
+
+foothold:
+comments in index.html shows /nibbleblog
+dirsearch shows admin.php
+blacklist protection slowed down things a lot but creds are admin:nibbles
+upload shell.php to my_image plugin
+foothold as nibbler
+
+privesc:
+#1:
+sudo -l shows (root) NOPASSWD:/home/nibbler/personal/stuff/monitor.sh
+unzip personal.zip in /home/nibbler and modify monitor.sh to a reverse shell
+run with sudo -u root /home/nibbler/personal/stuff/monitor.sh
+
+#2:
+kernel exploit 4.4.0-generic

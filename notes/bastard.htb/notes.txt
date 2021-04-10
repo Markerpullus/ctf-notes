@@ -1,0 +1,6 @@
+foothold:
+vulnerable version of drupal
+metasploit
+
+privesc:
+kernel exploit

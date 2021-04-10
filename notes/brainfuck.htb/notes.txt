@@ -1,0 +1,20 @@
+22, 25: smtp, 110: dovecot pop3d, 143: dovecot imap, 443: https
+
+foothold:
+wordpress site at brainfuck.htb
+wpscan reveals plugin wp-support-plus-responsive-ticket-system 7.1.3
+privilege escalation exploit to admin with exploit
+discover smtp username and password from wordpress admin settings orestis:kHGuERB29DNiNE
+sup3rs3cr3t.brainfuck.htb(super secret forum) from initial nmap scan
+evolution smtp client with creds
+email shows password for secret forum: orestis:kIEnnfEKJ#9UmdO
+admin gives orestis his id_rsa but is encrypted
+one time pad decode shows:
+https://10.10.10.17/8ba5aa10e915218697d1c658cdee0bb8/orestis/id_rsa
+ssh2john and crack passphrase: 3poulakia!
+gain foothold
+
+root flag:
+encrypt.stage, debug.txt, and output.txt in orestis home directory
+turns out to be an implementation of rsa with p, q, e, and encrypted root flag given
+brute force with python script and obtain root flag

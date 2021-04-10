@@ -1,0 +1,12 @@
+21:ftp, 3306:mysql, 8080:http-proxy
+
+foothold:
+admin.forum@easysetting.com in front page of 8080
+it0jNc6L/r090Q== discovered in html comments
+login as admin and discovered /serverinfo
+uncomment input line and rce
+
+privesc:
+b32 encoded id_rsa discovered in .bashrc of kathleen
+ssh
+rooted

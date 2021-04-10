@@ -1,0 +1,26 @@
+80, 443
+
+foothold:
+http://10.10.10.43/department on 80
+https://10.10.10.43/db phpliteadmin on 443
+
+bruteforce password for both logins (LAMEEEEE)
+1q2w3e4r5t for department
+password 123 for phpliteadmin
+
+edb 24044 for phpliteadmin
+hack.php saved to /var/tmp/hack.php
+run hack.php via lfi in department notes
+foothold as www
+
+user:
+id_rsa hidden in nineveh.png in secure_notes folder
+/etc/knockd.conf shows port knocking info to open port 22
+ssh -i id_rsa amrois@nineveh.htb
+
+root:
+/report directory shows someone runs some script every minute
+checkps.sh shows root runs chkrootkit every minute
+searchsploit chkrootkit
+echo "REVERSE_SHELL" > /tmp/update
+rooted

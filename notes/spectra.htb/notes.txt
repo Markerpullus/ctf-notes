@@ -1,0 +1,20 @@
+foothold:
+wordpress site running of /main, /testing
+wp-config.php.save found in dir listing of /testing
+reveals password for db: devtest:devteam01
+login to wordpress on /main as Administrator:devteam01
+wordpress reverse shell
+foothold as nginx
+
+horizontal privesc:
+password file found in /etc/autologin/passwd: SummerHereWeCome!!
+ssh as katie
+
+root privesc:
+sudo -l shows that katie can run initctl as anyone
+initctl can run config files under /etc/init
+since katie is in developers group, she can write to test.conf
+add "chmod +s /bin/bash" in test.conf
+sudo -u root /sbin/initctl start test
+bash -p
+rooted

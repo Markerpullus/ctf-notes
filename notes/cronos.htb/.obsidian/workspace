@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "4712d4839cf8247d",
+    "type": "split",
+    "children": [
+      {
+        "id": "7510f4ebbde99b40",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "06-Cron Job.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13d3d8af17d7c793",
+    "type": "split",
+    "children": [
+      {
+        "id": "f39428827a0a5f7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "651fd9bf38c8a43d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e03273fcf5efba76",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7fce09f4a62b727c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e97c989a2ec913a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5f3453d38632aa6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "06-Cron Job.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "06-Cron Job.md",
+    "04-Command Injection.md",
+    "03-SQL Injection.md",
+    "Untitled.md",
+    "05-Credentials.md",
+    "Command Injection.md",
+    "DNS.md",
+    "SQL Injection.md",
+    "Enumeration.md"
+  ]
+}

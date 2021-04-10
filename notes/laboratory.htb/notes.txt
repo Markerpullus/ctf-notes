@@ -1,0 +1,28 @@
+22, 80, 443:laboratory.htb
+
+foothold:
+laboratory.htb turns out to be useless site
+nmap reveals dns git.laboratory.htb, is gitlab site
+register with ****@laboratory.htb
+gitlab community 12.8.1
+metasploit exploit/multi/http/gitlab_file_read_rce
+foothold as git
+
+container escape:
+turns out that the foothold was inside the gitlab container
+running linpeas.sh doesn't reveal anything interesting
+run gitlab-rails console
+list user with user=User.find(1)
+returns dexter
+change his password with user.password=12341234; user.password_confirmation=12341234
+login to dexter from gitlab with changed password
+two repos available
+one of them contains his id_rsa
+ssh into dexter
+user as dexter
+
+priv esc:
+find / -perm /4000 2> /dev/null reveals docker-security binary
+strings docker-security shows chmod without full path
+path injection
+rooted

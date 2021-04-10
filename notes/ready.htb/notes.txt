@@ -1,0 +1,14 @@
+gitlab 11.4.7 cve
+
+login to root on gitlab with password found:
+YG65407Bjqvv9A0a8Tm_7w
+but nothing is there
+
+found smtp_password:
+wW59U!ZKMbG9+*#h
+
+su root
+
+turns out that the container is privileged
+so we can mount /dev/sda2 /tmp/test
+rooted

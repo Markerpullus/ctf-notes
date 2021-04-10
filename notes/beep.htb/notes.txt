@@ -1,0 +1,13 @@
+foothold:
+elastix running on 80
+elastix rce
+
+priv esc:
+sudo nmap;chmod...
+or
+writable cronjob
+or
+kernel exploit
+or
+sudo exploit
+...

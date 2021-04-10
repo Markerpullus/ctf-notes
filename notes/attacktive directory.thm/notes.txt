@@ -1,0 +1,9 @@
+use enum4linux to enum samba/netbios-ssn
+enum users with kerbrute
+ASRepRoasting with impacket GetNPUsers.py and crack svc-admin hash with hashcat
+list shares with smbclient and svc-admin creds
+obtain backup user's password
+### backup user on AD syncs with users' hashes ###
+use secretsdump.py in impacket to dump users' hashes
+obtain Administrator hash
+pass the hash with evil-winrm and obtain admin shell

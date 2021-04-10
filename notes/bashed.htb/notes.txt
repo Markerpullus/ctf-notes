@@ -1,0 +1,13 @@
+80
+
+foothold:
+dirsearch reveals /phpbash
+simplest foothold ever
+
+privesc:
+sudo -l shows (scriptmanager:scriptmanager) NOPASSWD:ALL
+sudo -u scriptmanager /bin/bash -i
+/scripts path contains test.py (owned by me) and test.txt (owned by root)
+test.py writes to test.txt, so it is inferred that root runs a cron job for the script
+modify test.py to be a reverse shell and wait for connection
+rooted

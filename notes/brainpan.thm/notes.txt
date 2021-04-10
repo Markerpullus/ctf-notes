@@ -1,0 +1,8 @@
+initial access:
+brainpan.exe found in /bin
+exploit buffer overflow
+running in wine
+execute bash shell in wine shell to gain access to underlying linux machine as puck
+
+privesc:
+/home/anansi/bin/anansi_util as root without passwd
